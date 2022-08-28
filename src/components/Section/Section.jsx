@@ -3,6 +3,7 @@ import styled from "./Section.module.css"
 import { Statistics } from "components/Statistics/Statistics";
 import { FeedbackOption } from "components/FeedbackOptions/FeedbackOptions";
 import { Notification } from "components/Notification/Notification";
+import PropTypes from 'prop-types';
 
 export class Section extends Component {
 
@@ -59,4 +60,8 @@ export class Section extends Component {
             </section>
         )
     }
+}
+
+Section.propTypes = {
+    title: PropTypes.string
 }
